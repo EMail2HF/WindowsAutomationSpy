@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsAutomationSpy.UI;
 
 namespace WindowsAutomationSpy
 {
@@ -16,7 +14,7 @@ namespace WindowsAutomationSpy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new ApplicationSelector());
         }
     }
 }

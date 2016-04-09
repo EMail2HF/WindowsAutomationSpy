@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
+using WindowsAutomationSpy.Utilities;
 using MetroFramework;
 using MetroFramework.Forms;
-using WindowsAutomationSpy.Utilities;
-using System.Drawing.Text;
-using System.Drawing;
 
-namespace WindowsAutomationSpy
+namespace WindowsAutomationSpy.UI
 {
     public partial class Main : MetroForm
     {
@@ -27,7 +25,7 @@ namespace WindowsAutomationSpy
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
 
-            DialogResult result = MetroMessageBox.Show(this, Constants.CLOSE_FORM_CONFIRMATION_MSG, Constants.CLOSE_FORM_TITLE, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            DialogResult result = MetroMessageBox.Show(this, Constants.CloseFormConfirmationMsg, Constants.CloseFormTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             if (result == DialogResult.No)
             {

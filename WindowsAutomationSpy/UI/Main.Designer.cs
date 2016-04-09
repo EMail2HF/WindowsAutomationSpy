@@ -1,4 +1,4 @@
-﻿namespace WindowsAutomationSpy
+﻿namespace WindowsAutomationSpy.UI
 {
     partial class Main
     {
