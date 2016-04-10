@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
-            this.homeTab = new MetroFramework.Controls.MetroTabPage();
             this.aboutTab = new MetroFramework.Controls.MetroTabPage();
             this.settingsTab = new MetroFramework.Controls.MetroTabPage();
+            this.homeTab = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroPanel1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.SuspendLayout();
@@ -52,36 +52,6 @@
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
-            // 
-            // metroTabControl1
-            // 
-            this.metroTabControl1.Controls.Add(this.homeTab);
-            this.metroTabControl1.Controls.Add(this.settingsTab);
-            this.metroTabControl1.Controls.Add(this.aboutTab);
-            this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
-            this.metroTabControl1.Margin = new System.Windows.Forms.Padding(0);
-            this.metroTabControl1.Multiline = true;
-            this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
-            this.metroTabControl1.Size = new System.Drawing.Size(1244, 527);
-            this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTabControl1.TabIndex = 2;
-            this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTabControl1.UseSelectable = true;
-            // 
-            // homeTab
-            // 
-            this.homeTab.HorizontalScrollbarBarColor = true;
-            this.homeTab.HorizontalScrollbarHighlightOnWheel = false;
-            this.homeTab.HorizontalScrollbarSize = 10;
-            this.homeTab.Location = new System.Drawing.Point(4, 38);
-            this.homeTab.Name = "homeTab";
-            this.homeTab.Size = new System.Drawing.Size(1236, 485);
-            this.homeTab.TabIndex = 0;
-            this.homeTab.Text = "HOME";
-            this.homeTab.VerticalScrollbarBarColor = true;
-            this.homeTab.VerticalScrollbarHighlightOnWheel = false;
-            this.homeTab.VerticalScrollbarSize = 10;
             // 
             // aboutTab
             // 
@@ -111,6 +81,36 @@
             this.settingsTab.VerticalScrollbarHighlightOnWheel = false;
             this.settingsTab.VerticalScrollbarSize = 10;
             // 
+            // homeTab
+            // 
+            this.homeTab.HorizontalScrollbarBarColor = true;
+            this.homeTab.HorizontalScrollbarHighlightOnWheel = false;
+            this.homeTab.HorizontalScrollbarSize = 10;
+            this.homeTab.Location = new System.Drawing.Point(4, 38);
+            this.homeTab.Name = "homeTab";
+            this.homeTab.Size = new System.Drawing.Size(1236, 485);
+            this.homeTab.TabIndex = 0;
+            this.homeTab.Text = "HOME";
+            this.homeTab.VerticalScrollbarBarColor = true;
+            this.homeTab.VerticalScrollbarHighlightOnWheel = false;
+            this.homeTab.VerticalScrollbarSize = 10;
+            // 
+            // metroTabControl1
+            // 
+            this.metroTabControl1.Controls.Add(this.homeTab);
+            this.metroTabControl1.Controls.Add(this.settingsTab);
+            this.metroTabControl1.Controls.Add(this.aboutTab);
+            this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
+            this.metroTabControl1.Margin = new System.Windows.Forms.Padding(0);
+            this.metroTabControl1.Multiline = true;
+            this.metroTabControl1.Name = "metroTabControl1";
+            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.Size = new System.Drawing.Size(1244, 527);
+            this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTabControl1.TabIndex = 2;
+            this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTabControl1.UseSelectable = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -133,9 +133,8 @@
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private MetroFramework.Controls.MetroTabPage homeTab;
-        private MetroFramework.Controls.MetroTabPage aboutTab;
         private MetroFramework.Controls.MetroTabPage settingsTab;
-
+        private MetroFramework.Controls.MetroTabPage aboutTab;
     }
 }
 

@@ -14,7 +14,7 @@ namespace WindowsAutomationSpy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ApplicationSelector());
+            Application.Run(new MainForm());
         }
     }
 }
