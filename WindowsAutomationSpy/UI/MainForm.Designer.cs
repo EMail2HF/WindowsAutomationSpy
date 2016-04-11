@@ -41,19 +41,20 @@
             this.spyLnkClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.spyLnkClose.Image = ((System.Drawing.Image)(resources.GetObject("spyLnkClose.Image")));
             this.spyLnkClose.ImageSize = 32;
-            this.spyLnkClose.Location = new System.Drawing.Point(723, 8);
+            this.spyLnkClose.Location = new System.Drawing.Point(807, 8);
             this.spyLnkClose.Name = "spyLnkClose";
             this.spyLnkClose.NoFocusImage = ((System.Drawing.Image)(resources.GetObject("spyLnkClose.NoFocusImage")));
             this.spyLnkClose.Size = new System.Drawing.Size(42, 39);
             this.spyLnkClose.TabIndex = 0;
             this.spyLnkClose.UseSelectable = true;
+            this.spyLnkClose.Click += new System.EventHandler(this.spyLnkClose_Click);
             // 
             // spyLnkSettings
             // 
             this.spyLnkSettings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.spyLnkSettings.Image = ((System.Drawing.Image)(resources.GetObject("spyLnkSettings.Image")));
             this.spyLnkSettings.ImageSize = 32;
-            this.spyLnkSettings.Location = new System.Drawing.Point(771, 8);
+            this.spyLnkSettings.Location = new System.Drawing.Point(759, 8);
             this.spyLnkSettings.Name = "spyLnkSettings";
             this.spyLnkSettings.NoFocusImage = ((System.Drawing.Image)(resources.GetObject("spyLnkSettings.NoFocusImage")));
             this.spyLnkSettings.Size = new System.Drawing.Size(42, 39);
@@ -69,7 +70,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(817, 378);
+            this.ClientSize = new System.Drawing.Size(853, 378);
             this.ControlBox = false;
             this.Controls.Add(this.spyLnkSettings);
             this.Controls.Add(this.spyLnkClose);

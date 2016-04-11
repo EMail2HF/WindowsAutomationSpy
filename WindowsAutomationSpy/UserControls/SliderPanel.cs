@@ -19,14 +19,12 @@ namespace WindowsAutomationSpy.UserControls
         protected virtual void Closed(EventArgs e)
         {
             EventHandler handler = CloseHandler;
-
             handler?.Invoke(this, e);
         }
 
         protected virtual void Shown(EventArgs e)
         {
             EventHandler handler = ShowHandler;
-
             handler?.Invoke(this, e);
         }
 

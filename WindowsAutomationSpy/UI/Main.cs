@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 using WindowsAutomationSpy.Utilities;
 using MetroFramework;
 using MetroFramework.Forms;
@@ -17,11 +16,6 @@ namespace WindowsAutomationSpy.UI
             //}
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
 
@@ -30,7 +24,7 @@ namespace WindowsAutomationSpy.UI
             if (result == DialogResult.No)
             {
                 e.Cancel = true;
-                this.Activate();
+                Activate();
             }
         }
     }

@@ -38,6 +38,17 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.spySettingsTabControl = new MetroFramework.Controls.MetroTabControl();
             this.spyDBConnectionTab = new MetroFramework.Controls.MetroTabPage();
+            this.spyMbTestDBConnection = new MetroFramework.Controls.MetroButton();
+            this.spyMtbDBPassword = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
+            this.spyMtbDBName = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.spyMtbDBUsername = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.spyMtbPortNo = new MetroFramework.Controls.MetroTextBox();
+            this.spyMtbServerName = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.spyThemeTab = new MetroFramework.Controls.MetroTabPage();
             this.spyMrbLight = new MetroFramework.Controls.MetroRadioButton();
             this.spyMrbDark = new MetroFramework.Controls.MetroRadioButton();
@@ -48,6 +59,7 @@
             this.spyMpCenter.SuspendLayout();
             this.spyMpSettings.SuspendLayout();
             this.spySettingsTabControl.SuspendLayout();
+            this.spyDBConnectionTab.SuspendLayout();
             this.spyThemeTab.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,6 +90,7 @@
             this.spyMbLogin.TabIndex = 5;
             this.spyMbLogin.Text = "&Login";
             this.spyMbLogin.UseSelectable = true;
+            this.spyMbLogin.Click += new System.EventHandler(this.spyMbLogin_Click);
             // 
             // spyMtbPassword
             // 
@@ -195,13 +208,24 @@
             this.spySettingsTabControl.Controls.Add(this.spyThemeTab);
             this.spySettingsTabControl.Location = new System.Drawing.Point(4, 42);
             this.spySettingsTabControl.Name = "spySettingsTabControl";
-            this.spySettingsTabControl.SelectedIndex = 1;
+            this.spySettingsTabControl.SelectedIndex = 0;
             this.spySettingsTabControl.Size = new System.Drawing.Size(245, 381);
             this.spySettingsTabControl.TabIndex = 3;
             this.spySettingsTabControl.UseSelectable = true;
             // 
             // spyDBConnectionTab
             // 
+            this.spyDBConnectionTab.Controls.Add(this.spyMbTestDBConnection);
+            this.spyDBConnectionTab.Controls.Add(this.spyMtbDBPassword);
+            this.spyDBConnectionTab.Controls.Add(this.metroLabel8);
+            this.spyDBConnectionTab.Controls.Add(this.spyMtbDBName);
+            this.spyDBConnectionTab.Controls.Add(this.metroLabel7);
+            this.spyDBConnectionTab.Controls.Add(this.spyMtbDBUsername);
+            this.spyDBConnectionTab.Controls.Add(this.metroLabel6);
+            this.spyDBConnectionTab.Controls.Add(this.spyMtbPortNo);
+            this.spyDBConnectionTab.Controls.Add(this.spyMtbServerName);
+            this.spyDBConnectionTab.Controls.Add(this.metroLabel5);
+            this.spyDBConnectionTab.Controls.Add(this.metroLabel4);
             this.spyDBConnectionTab.HorizontalScrollbarBarColor = true;
             this.spyDBConnectionTab.HorizontalScrollbarHighlightOnWheel = false;
             this.spyDBConnectionTab.HorizontalScrollbarSize = 10;
@@ -213,6 +237,222 @@
             this.spyDBConnectionTab.VerticalScrollbarBarColor = true;
             this.spyDBConnectionTab.VerticalScrollbarHighlightOnWheel = false;
             this.spyDBConnectionTab.VerticalScrollbarSize = 10;
+            // 
+            // spyMbTestDBConnection
+            // 
+            this.spyMbTestDBConnection.Location = new System.Drawing.Point(26, 240);
+            this.spyMbTestDBConnection.Name = "spyMbTestDBConnection";
+            this.spyMbTestDBConnection.Size = new System.Drawing.Size(184, 23);
+            this.spyMbTestDBConnection.TabIndex = 12;
+            this.spyMbTestDBConnection.Text = "Test Database Connection";
+            this.spyMbTestDBConnection.UseSelectable = true;
+            this.spyMbTestDBConnection.Click += new System.EventHandler(this.spyMbTestDBConnection_Click);
+            // 
+            // spyMtbDBPassword
+            // 
+            // 
+            // 
+            // 
+            this.spyMtbDBPassword.CustomButton.Image = null;
+            this.spyMtbDBPassword.CustomButton.Location = new System.Drawing.Point(162, 1);
+            this.spyMtbDBPassword.CustomButton.Name = "";
+            this.spyMtbDBPassword.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.spyMtbDBPassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.spyMtbDBPassword.CustomButton.TabIndex = 1;
+            this.spyMtbDBPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.spyMtbDBPassword.CustomButton.UseSelectable = true;
+            this.spyMtbDBPassword.CustomButton.Visible = false;
+            this.spyMtbDBPassword.Lines = new string[0];
+            this.spyMtbDBPassword.Location = new System.Drawing.Point(26, 211);
+            this.spyMtbDBPassword.MaxLength = 32767;
+            this.spyMtbDBPassword.Name = "spyMtbDBPassword";
+            this.spyMtbDBPassword.PasswordChar = '●';
+            this.spyMtbDBPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.spyMtbDBPassword.SelectedText = "";
+            this.spyMtbDBPassword.SelectionLength = 0;
+            this.spyMtbDBPassword.SelectionStart = 0;
+            this.spyMtbDBPassword.Size = new System.Drawing.Size(184, 23);
+            this.spyMtbDBPassword.TabIndex = 11;
+            this.spyMtbDBPassword.UseSelectable = true;
+            this.spyMtbDBPassword.UseSystemPasswordChar = true;
+            this.spyMtbDBPassword.WaterMark = "Database password";
+            this.spyMtbDBPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.spyMtbDBPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel8
+            // 
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.FontSize = MetroFramework.MetroLabelSize.Small;
+            this.metroLabel8.Location = new System.Drawing.Point(26, 193);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(62, 15);
+            this.metroLabel8.TabIndex = 10;
+            this.metroLabel8.Text = "password :";
+            this.metroLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // spyMtbDBName
+            // 
+            // 
+            // 
+            // 
+            this.spyMtbDBName.CustomButton.Image = null;
+            this.spyMtbDBName.CustomButton.Location = new System.Drawing.Point(162, 1);
+            this.spyMtbDBName.CustomButton.Name = "";
+            this.spyMtbDBName.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.spyMtbDBName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.spyMtbDBName.CustomButton.TabIndex = 1;
+            this.spyMtbDBName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.spyMtbDBName.CustomButton.UseSelectable = true;
+            this.spyMtbDBName.CustomButton.Visible = false;
+            this.spyMtbDBName.Lines = new string[0];
+            this.spyMtbDBName.Location = new System.Drawing.Point(26, 123);
+            this.spyMtbDBName.MaxLength = 32767;
+            this.spyMtbDBName.Name = "spyMtbDBName";
+            this.spyMtbDBName.PasswordChar = '\0';
+            this.spyMtbDBName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.spyMtbDBName.SelectedText = "";
+            this.spyMtbDBName.SelectionLength = 0;
+            this.spyMtbDBName.SelectionStart = 0;
+            this.spyMtbDBName.Size = new System.Drawing.Size(184, 23);
+            this.spyMtbDBName.TabIndex = 9;
+            this.spyMtbDBName.UseSelectable = true;
+            this.spyMtbDBName.WaterMark = "Name of the database";
+            this.spyMtbDBName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.spyMtbDBName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel7
+            // 
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.FontSize = MetroFramework.MetroLabelSize.Small;
+            this.metroLabel7.Location = new System.Drawing.Point(26, 105);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(91, 15);
+            this.metroLabel7.TabIndex = 8;
+            this.metroLabel7.Text = "database name :";
+            this.metroLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // spyMtbDBUsername
+            // 
+            // 
+            // 
+            // 
+            this.spyMtbDBUsername.CustomButton.Image = null;
+            this.spyMtbDBUsername.CustomButton.Location = new System.Drawing.Point(162, 1);
+            this.spyMtbDBUsername.CustomButton.Name = "";
+            this.spyMtbDBUsername.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.spyMtbDBUsername.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.spyMtbDBUsername.CustomButton.TabIndex = 1;
+            this.spyMtbDBUsername.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.spyMtbDBUsername.CustomButton.UseSelectable = true;
+            this.spyMtbDBUsername.CustomButton.Visible = false;
+            this.spyMtbDBUsername.Lines = new string[0];
+            this.spyMtbDBUsername.Location = new System.Drawing.Point(26, 167);
+            this.spyMtbDBUsername.MaxLength = 32767;
+            this.spyMtbDBUsername.Name = "spyMtbDBUsername";
+            this.spyMtbDBUsername.PasswordChar = '\0';
+            this.spyMtbDBUsername.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.spyMtbDBUsername.SelectedText = "";
+            this.spyMtbDBUsername.SelectionLength = 0;
+            this.spyMtbDBUsername.SelectionStart = 0;
+            this.spyMtbDBUsername.Size = new System.Drawing.Size(184, 23);
+            this.spyMtbDBUsername.TabIndex = 7;
+            this.spyMtbDBUsername.UseSelectable = true;
+            this.spyMtbDBUsername.WaterMark = "Database username";
+            this.spyMtbDBUsername.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.spyMtbDBUsername.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.FontSize = MetroFramework.MetroLabelSize.Small;
+            this.metroLabel6.Location = new System.Drawing.Point(26, 149);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(62, 15);
+            this.metroLabel6.TabIndex = 6;
+            this.metroLabel6.Text = "username :";
+            this.metroLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // spyMtbPortNo
+            // 
+            // 
+            // 
+            // 
+            this.spyMtbPortNo.CustomButton.Image = null;
+            this.spyMtbPortNo.CustomButton.Location = new System.Drawing.Point(162, 1);
+            this.spyMtbPortNo.CustomButton.Name = "";
+            this.spyMtbPortNo.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.spyMtbPortNo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.spyMtbPortNo.CustomButton.TabIndex = 1;
+            this.spyMtbPortNo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.spyMtbPortNo.CustomButton.UseSelectable = true;
+            this.spyMtbPortNo.CustomButton.Visible = false;
+            this.spyMtbPortNo.Lines = new string[0];
+            this.spyMtbPortNo.Location = new System.Drawing.Point(26, 77);
+            this.spyMtbPortNo.MaxLength = 32767;
+            this.spyMtbPortNo.Name = "spyMtbPortNo";
+            this.spyMtbPortNo.PasswordChar = '\0';
+            this.spyMtbPortNo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.spyMtbPortNo.SelectedText = "";
+            this.spyMtbPortNo.SelectionLength = 0;
+            this.spyMtbPortNo.SelectionStart = 0;
+            this.spyMtbPortNo.Size = new System.Drawing.Size(184, 23);
+            this.spyMtbPortNo.TabIndex = 5;
+            this.spyMtbPortNo.UseSelectable = true;
+            this.spyMtbPortNo.WaterMark = "Database port number";
+            this.spyMtbPortNo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.spyMtbPortNo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // spyMtbServerName
+            // 
+            // 
+            // 
+            // 
+            this.spyMtbServerName.CustomButton.Image = null;
+            this.spyMtbServerName.CustomButton.Location = new System.Drawing.Point(162, 1);
+            this.spyMtbServerName.CustomButton.Name = "";
+            this.spyMtbServerName.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.spyMtbServerName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.spyMtbServerName.CustomButton.TabIndex = 1;
+            this.spyMtbServerName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.spyMtbServerName.CustomButton.UseSelectable = true;
+            this.spyMtbServerName.CustomButton.Visible = false;
+            this.spyMtbServerName.Lines = new string[0];
+            this.spyMtbServerName.Location = new System.Drawing.Point(26, 33);
+            this.spyMtbServerName.MaxLength = 32767;
+            this.spyMtbServerName.Name = "spyMtbServerName";
+            this.spyMtbServerName.PasswordChar = '\0';
+            this.spyMtbServerName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.spyMtbServerName.SelectedText = "";
+            this.spyMtbServerName.SelectionLength = 0;
+            this.spyMtbServerName.SelectionStart = 0;
+            this.spyMtbServerName.Size = new System.Drawing.Size(184, 23);
+            this.spyMtbServerName.TabIndex = 4;
+            this.spyMtbServerName.UseSelectable = true;
+            this.spyMtbServerName.WaterMark = "Database server name";
+            this.spyMtbServerName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.spyMtbServerName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.FontSize = MetroFramework.MetroLabelSize.Small;
+            this.metroLabel5.Location = new System.Drawing.Point(26, 59);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(78, 15);
+            this.metroLabel5.TabIndex = 3;
+            this.metroLabel5.Text = "port number :";
+            this.metroLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Small;
+            this.metroLabel4.Location = new System.Drawing.Point(26, 15);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(75, 15);
+            this.metroLabel4.TabIndex = 2;
+            this.metroLabel4.Text = "server name :";
+            this.metroLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // spyThemeTab
             // 
@@ -311,10 +551,13 @@
             this.Controls.Add(this.spyMpCenter);
             this.Name = "LoginPanel";
             this.Size = new System.Drawing.Size(791, 423);
+            this.Load += new System.EventHandler(this.LoginPanel_Load);
             this.spyMpCenter.ResumeLayout(false);
             this.spyMpCenter.PerformLayout();
             this.spyMpSettings.ResumeLayout(false);
             this.spySettingsTabControl.ResumeLayout(false);
+            this.spyDBConnectionTab.ResumeLayout(false);
+            this.spyDBConnectionTab.PerformLayout();
             this.spyThemeTab.ResumeLayout(false);
             this.spyThemeTab.PerformLayout();
             this.ResumeLayout(false);
@@ -339,5 +582,16 @@
         private MetroFramework.Controls.MetroTextBox spyMtbUsername;
         private MetroFramework.Controls.MetroTextBox spyMtbPassword;
         private MetroFramework.Controls.MetroButton spyMbLogin;
+        private MetroFramework.Controls.MetroTextBox spyMtbPortNo;
+        private MetroFramework.Controls.MetroTextBox spyMtbServerName;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroButton spyMbTestDBConnection;
+        private MetroFramework.Controls.MetroTextBox spyMtbDBPassword;
+        private MetroFramework.Controls.MetroLabel metroLabel8;
+        private MetroFramework.Controls.MetroTextBox spyMtbDBName;
+        private MetroFramework.Controls.MetroLabel metroLabel7;
+        private MetroFramework.Controls.MetroTextBox spyMtbDBUsername;
+        private MetroFramework.Controls.MetroLabel metroLabel6;
     }
 }
