@@ -1,6 +1,6 @@
 ﻿namespace WindowsAutomationSpy.UserControls
 {
-    partial class SliderPanel
+    partial class ApplicationSelector
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // SliderPanel
+            // ApplicationSelector
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "SliderPanel";
-            this.Size = new System.Drawing.Size(344, 238);
+            this.Name = "ApplicationSelector";
+            this.Size = new System.Drawing.Size(596, 355);
             this.ResumeLayout(false);
 
         }

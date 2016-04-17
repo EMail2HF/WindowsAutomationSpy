@@ -41,9 +41,9 @@ namespace WindowsAutomationSpy.UserControls
             Visible = false;
 
             _owner = owner;
-            owner.Controls.Add(this);
+            _owner.Controls.Add(this);
             BringToFront();
-            owner.Resize += owner_Resize;
+            _owner.Resize += owner_Resize;
 
             ResizeForm();
         }
@@ -63,14 +63,18 @@ namespace WindowsAutomationSpy.UserControls
         public void Swipe(bool show = true)
         {
             Visible = true;
-            Transition transasition = new Transition(new TransitionType_EaseInEaseOut(500));
+            Transition transasition = new Transition(new TransitionType_EaseInEaseOut(1000));
             transasition.add(this, "Left", show ? 0 : Width);
             transasition.run();
 
-            while (Left != (show ? 0 : Width))
-            {
-                Application.DoEvents();
-            }
+            /*
+                Commented for the ui mislocation problem
+            */
+
+//            while (Left != (show ? 0 : Width))
+//            {
+//                Application.DoEvents();
+//            }
 
             if (!show)
             {

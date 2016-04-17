@@ -67,22 +67,17 @@ namespace WindowsAutomationSpy.UserControls
             ShowHandler += LoginPanel_Shown;
         }
 
+        #region Event_Handler
+
         private void LoginPanel_Shown(object sender, EventArgs e)
         {
             // ShowHandler event implementation
             spyMtbUsername.Focus();
         }
 
-        #region LoadEvents
-
-        private void LoginPanel_Load(object sender, EventArgs e)
-        {
-
-        }
-
         #endregion
 
-        #region ClickEvents
+        #region Click_Events
 
         private void tile_Click(object sender, EventArgs e)
         {
@@ -137,7 +132,7 @@ namespace WindowsAutomationSpy.UserControls
 
         #endregion
 
-        #region CheckedChangeEvents
+        #region Checked_Change_Events
 
         private void spyMrbDark_CheckedChanged(object sender, EventArgs e)
         {
@@ -167,7 +162,7 @@ namespace WindowsAutomationSpy.UserControls
             spyMpCenter.Enabled = false;
         }
 
-        void SaveSettings()
+        private void SaveSettings()
         {
             Settings.Default.Server = spyMtbServerName.Text;
             Settings.Default.Port = spyMtbPortNo.Text;

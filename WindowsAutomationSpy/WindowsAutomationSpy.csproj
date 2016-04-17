@@ -83,11 +83,29 @@
     <Compile Include="UI\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ApplicationSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ApplicationSelector.Designer.cs">
+      <DependentUpon>ApplicationSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HomePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\HomePanel.Designer.cs">
+      <DependentUpon>HomePanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\LoginPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\LoginPanel.Designer.cs">
       <DependentUpon>LoginPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SidePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SidePanel.Designer.cs">
+      <DependentUpon>SidePanel.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\SliderPanel.cs">
       <SubType>UserControl</SubType>
@@ -115,8 +133,17 @@
     <EmbeddedResource Include="UI\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ApplicationSelector.resx">
+      <DependentUpon>ApplicationSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HomePanel.resx">
+      <DependentUpon>HomePanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\LoginPanel.resx">
       <DependentUpon>LoginPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SidePanel.resx">
+      <DependentUpon>SidePanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SliderPanel.resx">
       <DependentUpon>SliderPanel.cs</DependentUpon>
